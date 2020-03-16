@@ -30,5 +30,8 @@ jobs:
             dep ensure
         fi
 
+    - name: fmt-check
+      run: make fmt-check
+
     - name: Build
-      run: go build -v .
+      run: make
