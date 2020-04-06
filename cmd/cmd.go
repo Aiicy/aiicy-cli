@@ -1,7 +1,7 @@
 //
 // Copyright (c) 2020-present Codist <countstarlight@gmail.com>. All rights reserved.
-// Use of this source code is governed by a MIT-style
-// license that can be found in the LICENSE file.
+// Use of this source code is governed by Apache License 2.0 that can
+// be found in the LICENSE file.
 // Written by Codist <countstarlight@gmail.com>, March 2020
 //
 
@@ -9,10 +9,11 @@ package cmd
 
 import (
 	"fmt"
-	"github.com/aiicy/aiicy-go/logger"
-	"github.com/spf13/cobra"
 	"os"
 	"runtime"
+
+	"github.com/aiicy/aiicy-go/logger"
+	"github.com/spf13/cobra"
 )
 
 var (

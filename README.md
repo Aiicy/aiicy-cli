@@ -7,10 +7,16 @@ Aiicy CLI
   </a>
   <a href="https://github.com/Aiicy/aiicy-cli/actions?query=workflow%3AGo">
         <img src="https://github.com/Aiicy/aiicy-cli/workflows/Go/badge.svg?branch=master" alt="GitHub Actions">
-    </a>
+  </a>
   <a href="https://github.com/aiicy/aiicy-cli/blob/master/LICENSE">
-    <img src="https://img.shields.io/badge/license-MIT-blue.svg?style=flat" alt="MIT License">
+        <img src="https://img.shields.io/github/license/aiicy/aiicy-cli?color=blue" alt="License">
   </a>
 </p>
 
 Command tool for Aiicy
+
+# License
+
+[Apache 2.0](https://github.com/Aiicy/aiicy-cli/blob/master/LICENSE)
+
+Copyright (c) 2020-present Codist
