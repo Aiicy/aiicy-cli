@@ -1,7 +1,7 @@
 //
 // Copyright (c) 2019-present Codist <countstarlight@gmail.com>. All rights reserved.
-// Use of this source code is governed by a MIT-style
-// license that can be found in the LICENSE file.
+// Use of this source code is governed by Apache License 2.0 that can
+// be found in the LICENSE file.
 // Written by Codist <countstarlight@gmail.com>, August 2019
 //
 
@@ -33,7 +33,7 @@ func String(key string, val string) Field {
 
 func init() {
 	// Print log when start
-	S = New(LogInfo{Level: "debug"})
+	S = New(LogConfig{Level: "debug"})
 }
 
 // NewEncoderConfig creates logger config for debug mode
@@ -76,7 +76,7 @@ func ParseLevel(level string) (zapcore.Level, error) {
 }
 
 // New create a new Sugared logger
-func New(c LogInfo, fields ...string) *Logger {
+func New(c LogConfig, fields ...string) *zap.SugaredLogger {
 	var (
 		format zapcore.Encoder
 		write  zapcore.WriteSyncer

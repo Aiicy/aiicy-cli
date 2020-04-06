@@ -1,14 +1,14 @@
 //
 // Copyright (c) 2019-present Codist <countstarlight@gmail.com>. All rights reserved.
-// Use of this source code is governed by a MIT-style
-// license that can be found in the LICENSE file.
+// Use of this source code is governed by Apache License 2.0 that can
+// be found in the LICENSE file.
 // Written by Codist <countstarlight@gmail.com>, December 2019
 //
 
 package logger
 
-// LogInfo for logging
-type LogInfo struct {
+// LogConfig for logging
+type LogConfig struct {
 	Path   string `yaml:"path" json:"path"`
 	Level  string `yaml:"level" json:"level" default:"info" validate:"regexp=^(info|debug|warn|error)$"`
 	Mode   string `yaml:"mode" json:"mode" default:"console" validate:"regexp=^(console|file)$"`

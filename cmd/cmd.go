@@ -9,7 +9,7 @@ package cmd
 
 import (
 	"fmt"
-	"github.com/aiicy/aiicy-cli/logger"
+	"github.com/aiicy/aiicy-go/logger"
 	"github.com/spf13/cobra"
 	"os"
 	"runtime"
@@ -46,7 +46,7 @@ func init() {
 	rootCmd.AddCommand(versionCmd)
 	rootCmd.PersistentPreRun = func(cmd *cobra.Command, args []string) {
 		if !debugMode {
-			log = logger.New(logger.LogInfo{Level: "info"})
+			log = logger.New(logger.LogConfig{Level: "info"})
 		}
 	}
 }
